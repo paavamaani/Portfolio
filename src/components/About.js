@@ -1,4 +1,4 @@
-import Paavamaani from '../assets/images/Paavamaani.png';
+import Paavamaani from '../assets/images/paavamaani.png';
 
 import { AboutData } from '../data/AboutData';
 
