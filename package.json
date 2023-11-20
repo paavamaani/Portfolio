@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./src/index.html",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel --open",
+    "build": "parcel build"
+  },
+  "author": "Paavamaani Manchala",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.10.3",
+    "postcss": "^8.4.31",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0",
+    "tailwindcss": "^3.3.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-react": "^7.23.3",
+    "process": "^0.11.10"
+  }
+}

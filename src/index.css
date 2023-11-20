@@ -1,0 +1,18 @@
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .is-active {
+    @apply bg-slate-900 text-slate-50 rounded-sm dark:bg-slate-50 dark:text-slate-900;
+  }
+
+  .nav-list-item {
+    @apply px-4 py-2 mx-2 my-1 hover:bg-slate-900 hover:text-slate-50 hover:rounded-sm dark:hover:bg-slate-50 dark:hover:text-slate-900;
+  }
+
+  .nav-flyout {
+    @apply absolute p-4 max-w-fit rounded-3xl bg-white text-sm leading-6 shadow-lg right-2 top-14 cursor-pointer dark:bg-slate-900 dark:text-slate-300 dark:shadow-slate-400;
+  }
+}
