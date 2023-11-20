@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
-    extend: {},
+    extend: {
+      base: 'tailwindcss/base',
+      components: 'tailwindcss/components',
+      utilities: 'tailwindcss/utilities',
+    },
   },
   plugins: [],
   darkMode: 'class',
