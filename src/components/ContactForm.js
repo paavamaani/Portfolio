@@ -1,8 +1,13 @@
 import { useState } from 'react';
 
 const ContactForm = () => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -12,29 +17,41 @@ const ContactForm = () => {
     setMessage(e.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Email:', email);
-    console.log('Message:', message);
-  };
-
   return (
     <div className='p-10 m-10 rounded-lg shadow-md dark:bg-gradient-to-r dark:from-slate-800 dark:to-slate-900'>
       <p className='mb-6 text-center text-slate-900 font-semibold dark:text-slate-50'>
         You can reach out to me directly using this form.
       </p>
-      <form onSubmit={handleSubmit}>
+      <form>
         <div className='flex flex-col text-slate-900 dark:text-slate-50'>
           <label
             className='text-slate-900 dark:text-slate-50 font-semibold leading-8'
             htmlFor='email'
           >
-            Your Email Address
+            Full name
+          </label>
+          <input
+            className='p-1 rounded-md border-2 border-slate-300'
+            type='text'
+            id='senderName'
+            name='senderName'
+            placeholder='Enter your full name'
+            value={name}
+            onChange={handleNameChange}
+          />
+        </div>
+        <div className='flex flex-col text-slate-900 dark:text-slate-50'>
+          <label
+            className='text-slate-900 dark:text-slate-50 font-semibold leading-8'
+            htmlFor='email'
+          >
+            Email Address
           </label>
           <input
             className='p-1 rounded-md border-2 border-slate-300'
             type='email'
-            id='email'
+            id='senderEmail'
+            name='senderEmail'
             placeholder='Enter your email'
             value={email}
             onChange={handleEmailChange}
@@ -50,6 +67,7 @@ const ContactForm = () => {
           <textarea
             className='p-1 rounded-md border-2 border-slate-300'
             id='message'
+            name='message'
             placeholder='Type your message here'
             value={message}
             onChange={handleMessageChange}

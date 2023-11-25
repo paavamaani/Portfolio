@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <>
       <Divider id='Contact' text='Contact' />
-      <div className='flex flex-col lg:flex lg:flex-row items-center justify-center dark:bg-slate-900'>
-        <div className='lg:max-w-xl lg:mr-20 px-10'>
+      <div className='mb-4 flex flex-col lg:flex lg:flex-row items-center justify-center dark:bg-slate-900'>
+        <div className='lg:max-w-xl px-10'>
           <h1 className='mt-2 text-3xl font-bold text-slate-900 sm:text-4xl dark:text-slate-50'>
             Get in Touch
           </h1>
@@ -61,7 +61,7 @@ const Contact = () => {
             </span>
           </div>
         </div>
-        <ContactForm />
+        {/* <ContactForm /> */}
       </div>
     </>
   );

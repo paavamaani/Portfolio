@@ -32,7 +32,7 @@ const NavBar = () => {
     <>
       <nav className='top-0 sticky z-10 p-6 flex justify-between items-center backdrop-blur text-slate-900 font-semibold lg:py-0 dark:bg-slate-900 dark:text-slate-300'>
         <div className='absolute inset-x-0 bottom-0 mx-6 h-px bg-slate-900/5'></div>
-        <div className=''>Logo</div>
+        <div className=''>Paavamaani Manchala</div>
         <ul className={`${toggleMenu ? 'nav-flyout' : 'hidden lg:flex p-4'}`}>
           {NavBarData.map((item) => {
             return (
